@@ -13,5 +13,8 @@ console.log("Prueba de Consola");
 //Mostrar mensaje en ventana emergente
 alert("Desde una ventana emergente");
 
+//Sumemos 2 valores
+document.write("Resultado = " + (12 + 5))
+
 
 
