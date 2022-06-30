@@ -16,5 +16,7 @@ alert("Desde una ventana emergente");
 //Sumemos 2 valores
 document.write("Resultado = " + (12 + 5))
 
-
+//ejemplo de Constante
+const url = "https://campus.rollingcodeschool.com/login/index.php"
+document.write("<br>" + url + "</br>")
 
