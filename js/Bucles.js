@@ -11,3 +11,22 @@ while (cantidad <= 20 ){ //20 es la cantidad de veces q se puede servir mates ha
     document.write("preparar mate y entregar al siguiente compañero");
     cantidad = cantidad +1 ; //o cantidad++ // //se modifica la condicion lógica para que no sea un bucle infinito//
 }
+
+/* Bucles Do While (hacer....mientras)
+
+do{
+    ---todo el codigo que quiero ejecutar x cantidad de veces
+    ---cambiar la condicion lógica
+} while (condicion lógica)
+
+*/
+
+let mates = 1;
+
+do{
+    document.write("preparar mate y entregar al siguiente compañero, mate cebado n°:" + mates);
+    mates++;
+} while( mates <= 20)
+
+
+/* Bucle 
