@@ -8,7 +8,7 @@ while (condicion lógica){
 let cantidad = 0; //cantidad de mates servidos//
 
 while (cantidad <= 20 ){ //20 es la cantidad de veces q se puede servir mates hasta que ya no haya agua//
-    document.write("preparar mate y entregar al siguiente compañero");
+    document.write("<br>preparar mate y entregar al siguiente compañero" + cantidad);
     cantidad = cantidad +1 ; //o cantidad++ // //se modifica la condicion lógica para que no sea un bucle infinito//
 }
 
@@ -24,9 +24,18 @@ do{
 let mates = 1;
 
 do{
-    document.write("preparar mate y entregar al siguiente compañero, mate cebado n°:" + mates);
+    document.write("<br>preparar mate y entregar al siguiente compañero, mate cebado n°:" + mates);
     mates++;
 } while( mates <= 20)
 
 
-/* Bucle 
+/* Bucle For
+
+for ( inicializar una variable; condicion lógica; incremente o decrementa la variable declarada al inicio)
+
+*/
+
+
+for(let mate=1; mate<=20; mate++){
+    document.write("<br>preparar mate y entregar al siguiente compañero, mate cebado n°:" + mate);
+}
