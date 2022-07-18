@@ -23,3 +23,26 @@ if(window.confirm(texto)==false){
     }
 }
 
+
+let estacion =prompt("ingrese su estacion del año favorita: 1-verano; 2-otoño; 3-primavera; 4-invierno")
+
+switch(estacion){
+    case "1":
+        console.log("helado")
+        document.write("Helado");
+        break;
+    case "2":
+        console.log("locro")
+        document.write("Locro")
+        break;
+    case "3":
+        console.log("chocolate")
+        document.write("Chocolate");
+        break;
+    case "4":
+        console.log("cerveza")
+        document.write("Cerveza");
+        break;
+    default:
+        document.write("Opcion no valida"); 
+}
