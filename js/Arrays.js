@@ -4,8 +4,19 @@ let listaSupermercado = [];
 //ccrear un arreglo con datos
 let series = [`Peaky Blinders`, 7, `Stranger Things`, 4, `The Boys`, 3, `Loki`];
 
+let mostrarSeries = (titulo) => {
+document.write("<hr> <h3>"+titulo+"</h3>");
+document.write(`<hr> <ul>`);
+for(let indice = 0; indice < series.length; indice++){
+document.write(`<li>${series[indice]}</li>`)
+};
+document.write(`</ul>`);
+}
+
+
+
 //mostras un arreglo
-document.write(series);
+mostrarSeries("Array Original");
 
 //mostras un elemento del arreglo
 document.write("<hr>"+series[2]);
@@ -20,12 +31,7 @@ document.write(`</ul>`);
 
 //agregar un elemento nuevo al final del arreglo
 series.push(`Rick and Morty`);
-document.write(`<hr> <h3>Aquí se agregó un nuevo elementos al arreglo</h3>`);
-document.write(`<ul>`);
-for(let indice = 0; indice < series.length; indice++){
-document.write(`<li>${series[indice]}</li>`)
-};
-document.write(`</ul>`);
+mostrarSeries("Aquí se agregó un nuevo elementos al arreglo");
 
 //agregar un elemento en una posicion en particular del arreglo
 series.splice(2, 0, `The Witcher`); //Parametros del .splice (posición del elemento, cantidad de elementos a borrar, ítem que vamos a agregar)
