@@ -1,7 +1,7 @@
 //Crear un arreglo
 let listaSupermercado = [];
 
-//ccrear un arreglo con datos
+//crear un arreglo con datos
 let series = [`Peaky Blinders`, 7, `Stranger Things`, 4, `The Boys`, 3, `Loki`];
 
 let mostrarSeries = (titulo) => {
