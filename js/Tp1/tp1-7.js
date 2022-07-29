@@ -11,5 +11,5 @@ else{
     }
     else{
         document.write("El Mayor es " + numero3)
-    }
+    };
 }

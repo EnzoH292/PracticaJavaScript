@@ -6,5 +6,5 @@ if (numero1 > numero2){
     else{
         if(numero2 > numero1){
             document.write("El mayor valor es " + numero2)
-        }
+        };
     }

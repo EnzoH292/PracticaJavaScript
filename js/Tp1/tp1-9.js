@@ -1,4 +1,5 @@
 let fraseOriginal = prompt("Introduzca una frase de 10 caracteres")
+
 if (((fraseOriginal.toLowerCase()).charAt(0, 0)) == "a" || ((fraseOriginal.toLowerCase()).charAt(0, 0)) == "e" || ((fraseOriginal.toLowerCase()).charAt(0, 0)) == "i" || ((fraseOriginal.toLowerCase()).charAt(0, 0)) == "o" || ((fraseOriginal.toLowerCase()).charAt(0, 0)) == "u") {
     console.log(fraseOriginal.charAt(0, 0))
 }

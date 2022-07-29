@@ -1,5 +1,6 @@
 let numero1 = parseInt(prompt("Introduzca un dividendo"))
 
+
 if ( (numero1 % 2) == 0){
     document.write("El número " + numero1 + " es divisible en 2 </br>")
 }
@@ -51,3 +52,5 @@ else{
     if ( ((numero1 % 4 == 0) & (numero1 % 7 == 0))){
         document.write("<br> El número " + numero1 + " es divisible en 4 y 7 </br>")}                
         }         
+
+        
