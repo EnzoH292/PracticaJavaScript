@@ -7,7 +7,6 @@ Mostrar en el documento web los ítems de las posiciones primera, tercera y últ
 Añade en última posición la ciudad de París.
 Escribe por pantalla el elemento que ocupa la segunda posición.
 Sustituye el elemento que ocupa la segunda posición por la ciudad de 'Barcelona'.*/
-
 let ciudades = [];
 
 let agregarCiudades = () => {
