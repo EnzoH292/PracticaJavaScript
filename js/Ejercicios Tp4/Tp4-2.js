@@ -1,0 +1,1 @@
+//resuelto en clase 26 de Julio 2022 - JS - Objetos con notacion literal, primera parte de clase
