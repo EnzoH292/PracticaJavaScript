@@ -1,3 +1,4 @@
+
 // Crea una clase llamada Persona que siga las siguientes condiciones:
 // Sus propiedades son: nombre, edad, DNI, sexo (H hombre, M mujer), peso y altura, año de nacimiento.
 

@@ -1,3 +1,4 @@
+
 // Escribe un programa que cree un objeto "cuenta" con las siguientes propiedades:
 // Una propiedad titular con el valor "Alex".
 // Una propiedad saldo, teniendo como valor inicial 0.
