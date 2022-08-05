@@ -33,7 +33,7 @@ let agenda = {
             };
         }
     
-        let contacto = new Contacto(prompt("Escriba el nombre del nuevo contacto"), parseInt(prompt("introduzca el número de teléfono del contacto")));
+        let contacto = new Contacto(prompt("Escriba el nombre del nuevo contacto"), parseInt(prompt("Introduzca el número de teléfono del contacto")));
         
         if(contactosGuardados.length<10){
             contactosGuardados.push(contacto);
@@ -42,20 +42,88 @@ let agenda = {
         }
     },
     
-    existeContacto(Contacto){},
+    existeContacto(){
+        let buscador = prompt("Buscar contacto");
+        for(indice=0; indice<contactosGuardados.length; indice++){
+            let nombreContacto = (contactosGuardados[indice]).nombre
+            console.log(nombreContacto)
+            if(buscador == nombreContacto){
+                document.write(`El contacto ${buscador} ya se encuentra agendado`)
+            }else{
+                document.write(`El contacto  ${buscador} no está registrado`)
+            };
+        }
+    },
 
-    listarContactos(){},
+    listarContactos(){
+        for(indice=0; indice<contactosGuardados.length; indice++){
+            let nombreContacto = (contactosGuardados[indice]).nombre;
+            let numeroContacto = (contactosGuardados[indice]).telefono;
+            document.write(
+                `<ul>
+                    <li>Contacto: ${nombreContacto}</li>
+                    <li>Teléfono: ${numeroContacto}</li>
+                </ul>`
+            );
+        };
+    },
 
-    buscarContacto(nombre){},
+    buscarContacto(){
+        let buscador = prompt("Buscar contacto");
+        for(indice=0; indice<contactosGuardados.length; indice++){
+            let nombreContacto = (contactosGuardados[indice]).nombre;
+            let numeroContacto = (contactosGuardados[indice]).telefono;
+            // console.log(nombreContacto)
+            if(buscador == nombreContacto){
+                document.write(`Teléfono: ${numeroContacto}`)
+            }
+        }
+    },
 
-    eliminarContacto(Contacto){},
+    eliminarContacto(){
+        let buscador = prompt("Eliminar contacto");
+        for(indice=0; indice<contactosGuardados.length; indice++){
+            let nombreContacto = (contactosGuardados[indice]).nombre;
+            // console.log(nombreContacto)
+            if(buscador == nombreContacto){
+                contactosGuardados.splice(indice, 1);
+            }
+        }
+    },
 
-    agendaLlena(){},
+    agendaLlena(){
+        if(contactosGuardados.length<10){
+            document.write(`La agenda aún no está completa`);
+        }else{
+            document.write(`La agenda se encuentra llena`)
+        };
+    },
 
-    huecosLibres(){},
+    huecosLibres(){
+        let espaciosLibres = 10 - contactosGuardados.length
+        document.write(`Hay ${espaciosLibres} espacios libres en la agenda`)
+    },
 
 
 };
 
 
+
 console.log(contactosGuardados);
+
+agenda.aniadirContacto();
+
+console.log(contactosGuardados);
+
+// agenda.existeContacto();
+
+// agenda.listarContactos();
+
+// agenda.buscarContacto();
+
+// agenda.eliminarContacto();
+
+// agenda.agendaLlena();
+
+// agenda.huecosLibres();
+

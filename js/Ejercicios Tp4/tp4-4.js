@@ -37,3 +37,4 @@ aceite.imprimeDatos();
 //Array con objetos
 let compras = [gaseosa, cereal, aceite];
 console.log(compras);
+
