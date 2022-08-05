@@ -22,6 +22,7 @@ class Producto {
     }
 }
 
+
 //Objetos Instanciados
 let gaseosa = new Producto ("CA8795", "Coca-Cola", "$ "+ 30);
 let cereal = new Producto ("Ab258", "Trix", "$ "+50);

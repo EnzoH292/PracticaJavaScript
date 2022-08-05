@@ -96,6 +96,7 @@ mateo.esMayorDeEdad();
 mateo.generaDNI();
 mateo.mostrarGeneracion();
 
+
 julieta.mostrarDatos();
 julieta.esMayorDeEdad();
 julieta.generaDNI();

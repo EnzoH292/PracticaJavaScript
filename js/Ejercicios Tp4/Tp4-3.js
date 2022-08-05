@@ -35,6 +35,7 @@ class Rectangulo {
 }
 
 
+
 let rectanguloGrande = new Rectangulo (parseFloat(prompt("introduzca un valor de altura")), parseFloat(prompt("introduzca un valor de ancho")));
 console.log(rectanguloGrande);
 rectanguloGrande.mostrarDatos();

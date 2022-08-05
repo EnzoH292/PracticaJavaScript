@@ -2,6 +2,7 @@
 // marca, modelo y si está encendido o apagado. 
 // Crea los métodos necesarios para permitir encender y apagar el auto.
 
+
 let auto = {
     color: "negro",
     marca: "Chervrolet",

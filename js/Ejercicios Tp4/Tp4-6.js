@@ -76,7 +76,6 @@ let libro2 = new Libro (63251, `"1984"`, "George Orwell", 326);
 
 
 
-
 //Pruebas con Console.log
 
 // console.log(libro1.numeroPaginas);
